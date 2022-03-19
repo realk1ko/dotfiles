@@ -1,0 +1,9 @@
+[user]
+	name = realk1ko
+	email = 32820057+realk1ko@users.noreply.github.com
+[core]
+	editor = vim
+	commentChar = !
+[pull]
+	rebase = false
+
