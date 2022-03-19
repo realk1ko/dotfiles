@@ -3,9 +3,6 @@ HISTFILE=~/.zsh_history
 HISTSIZE=1000
 SAVEHIST=1000
 
-# colors (on some systems)
-CLICOLOR=1
-
 # prompt
 PROMPT='%{%F{blue}%}%n%{%f%}@%{%F{red}%}%m%{%f%}:%~%(!.#.$) '
 
@@ -28,8 +25,11 @@ alias ll='ls -la'
 alias la='ls -a'
 ls -Z > /dev/null 2>&1 && alias lz='ls -laZ'
 
+# colors (on some systems)
+export CLICOLOR=1
+
 # more colors
-ls --color=auto > /dev/null 2>&1 && alias ls='ls --color=auto' || alias ls='ls -G'
+alias ls='ls --color=auto'
 diff --color=auto > /dev/null 2>&1 && alias diff='diff --color=auto'
 alias grep='grep --colour=auto'
 alias egrep='egrep --colour=auto'
