@@ -34,3 +34,7 @@ diff --color=auto > /dev/null 2>&1 && alias diff='diff --color=auto'
 alias grep='grep --colour=auto'
 alias egrep='egrep --colour=auto'
 alias fgrep='fgrep --colour=auto'
+
+# completion
+autoload -U compinit
+compinit
