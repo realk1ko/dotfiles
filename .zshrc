@@ -30,14 +30,10 @@ export CLICOLOR=1
 
 # color aliases
 alias ls='ls --color=auto'
+diff --color=auto -v > /dev/null 2>&1 && alias diff='diff --color=auto'
 alias grep='grep --colour=auto'
 alias egrep='egrep --colour=auto'
 alias fgrep='fgrep --colour=auto'
-
-# color aliases depending on system
-if [ "$(uname)" != "Darwin" ]; then
-  alias diff='diff --color=auto'
-fi
 
 # completion
 autoload -U compinit
