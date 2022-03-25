@@ -4,7 +4,7 @@ HISTSIZE=1000
 SAVEHIST=1000
 
 # prompt
-PROMPT='%{%F{blue}%}%n%{%f%}@%{%F{red}%}%m%{%f%}:%~%(!.#.$) '
+PROMPT='%B%{%F{blue}%}%n%{%f%}%b@%B%{%F{red}%}%m%{%f%}%b:%~%(!.#.$) '
 
 # various options
 setopt nomatch
