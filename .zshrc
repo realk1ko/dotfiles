@@ -25,15 +25,19 @@ alias ll='ls -la'
 alias la='ls -a'
 ls -Z > /dev/null 2>&1 && alias lz='ls -laZ'
 
-# colors (on some systems)
+# colors (for macOS)
 export CLICOLOR=1
 
-# more colors
+# color aliases
 alias ls='ls --color=auto'
-diff --color=auto > /dev/null 2>&1 && alias diff='diff --color=auto'
 alias grep='grep --colour=auto'
 alias egrep='egrep --colour=auto'
 alias fgrep='fgrep --colour=auto'
+
+# color aliases depending on system
+if [ "$(uname)" != "Darwin" ]; then
+  alias diff='diff --color=auto'
+fi
 
 # completion
 autoload -U compinit
