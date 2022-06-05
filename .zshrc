@@ -31,9 +31,9 @@ export CLICOLOR=1
 # color aliases
 alias ls='ls --color=auto'
 diff --color=auto -v > /dev/null 2>&1 && alias diff='diff --color=auto'
-alias grep='grep --colour=auto'
-alias egrep='egrep --colour=auto'
-alias fgrep='fgrep --colour=auto'
+grep --colour=auto > /dev/null 2>&1 && alias grep='grep --colour=auto'
+egrep --colour=auto > /dev/null 2>&1 && alias egrep='egrep --colour=auto'
+fgrep --colour=auto > /dev/null 2>&1 && alias fgrep='fgrep --colour=auto'
 
 # completion
 autoload -U compinit
