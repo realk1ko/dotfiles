@@ -13,6 +13,25 @@ unsetopt autocd beep extendedglob inc_append_history share_history notify
 # use Emacs style keybindings
 bindkey -e
 
+# additional keybindings because zsh doesn't read /etc/inputrc
+bindkey "\e[1~" beginning-of-line
+bindkey "\e[4~" end-of-line
+bindkey "\e[5~" history-search-backward
+bindkey "\e[6~" history-search-forward
+bindkey "\e[3~" delete-char
+bindkey "\e[2~" overwrite-mode
+bindkey "\e[5C" forward-word
+bindkey "\e[5D" backward-word
+bindkey "\e[1;5C" forward-word
+bindkey "\e[1;5D" backward-word
+bindkey "\e[8~" end-of-line
+bindkey "\eOc" forward-word
+bindkey "\eOd" backward-word
+bindkey "\eOH" beginning-of-line
+bindkey "\eOF" end-of-line
+bindkey "\e[H" beginning-of-line
+bindkey "\e[F" end-of-line
+
 # include user binaries in path
 path+=("$HOME/.local/bin")
 
