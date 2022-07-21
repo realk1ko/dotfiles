@@ -7,8 +7,7 @@ SAVEHIST=1000
 PROMPT='%B%{%F{blue}%}%n%{%f%}%b@%B%{%F{red}%}%m%{%f%}%b:%~%(!.#.$) '
 
 # various options
-setopt nomatch
-unsetopt autocd beep extendedglob inc_append_history share_history notify
+unsetopt autocd beep extendedglob inc_append_history nomatch notify share_history
 
 # use Emacs style keybindings
 bindkey -e
