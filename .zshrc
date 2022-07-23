@@ -34,9 +34,10 @@ bindkey "\e[F" end-of-line
 # include user binaries in path
 path+=("$HOME/.local/bin")
 
-# safe delete and copy
+# safe delete, copy and move
 alias rm='rm -i'
 alias cp='cp -i'
+alias mv='mv -i'
 
 # shortcuts for ls
 alias ll='ls -la'
